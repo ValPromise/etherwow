@@ -1,0 +1,32 @@
+{
+  "name": "etherwow",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "HS <huangshuai@utianqi.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env ws=http://47.75.185.67:3111 nuxt",
+    "test": "cross-env PORT=3001 cross-env ws=http://47.75.185.67:3111 nuxt",
+    "build": "cross-env ws=http://47.75.185.67:3110 cross-env PORT=5000 nuxt build",
+    "start": "cross-env ws=http://47.75.185.67:3110 cross-env PORT=5000 nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.1.4",
+    "nuxt": "^1.0.0",
+    "web3": "^0.20.6"
+  },
+  "devDependencies": {
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0"
+  },
+  "config": {
+    "nuxt": {
+      "HOST": "127.0.0.1",
+      "PORT": "5000"
+    }
+  }
+}

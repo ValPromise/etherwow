@@ -1,0 +1,4 @@
+/node_modules/
+.nuxt/
+*.log
+package-lock.json
